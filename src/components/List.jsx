@@ -14,11 +14,10 @@ export const List = ({list, setList}) => {
     <div>
         {list && list.map((el) => {
             return <div>
-                <h2>{el.name}</h2>
-                <h2>{el.age}</h2>
-                <h2>{el.job}</h2>
-                <h2>{el.color}</h2>
+                <h2>Name- {el.name} <br />Age- {el.age} <br />Job- {el.job} <br />Favorite color- {el.color}</h2>
                 <button value={el.id} onClick={handleDelete}>delete</button>
+                <br />
+                <br />
             </div>
         })}
     </div>

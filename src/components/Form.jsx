@@ -28,6 +28,10 @@ export const Form = () => {
             console.log(res)
             setList()
             setList(res.data)
+            e.target[0].value = ''
+            e.target[1].value = ''
+            e.target[2].value = ''
+            e.target[3].value = ''
         })
     }
   return (
